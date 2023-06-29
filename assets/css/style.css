@@ -18,8 +18,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 250px;
-    width: 550px;
+    height: 27%;
+    width: 55%;
     background: transparent;
     border-radius: 5px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
@@ -27,12 +27,13 @@ body {
 }
 
 h1 {
+    font-size: 4vw;
     color: white;
 }
 
 .timer {
     display: flex;
-    font-size: 60px;
+    font-size: 7vw;
     font-weight: bold;
     color: white;
 }
@@ -41,27 +42,27 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    min-width: 90px;
+    min-width: 10vw;
 }
 
 .separator {
     display: flex;
-    font-size: 65px;
-    padding-bottom: 20px;
+    font-size: 7vw;
+    padding-bottom: 1.2rem;
     color: #a7d9e7;
 }
 
 #milliseconds {
     display: flex;
-    font-size: 30px;
+    font-size: 3vw;
     color: #f2f9ff;
 }
 
 .buttons {
     display: flex;
-    gap: 5rem;
+    gap: 20%;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -71,6 +72,7 @@ h1 {
     cursor: pointer;
     border: none;
     transition: all 0.2s ease-in-out;
+    width: 60%;
 }
 
 .btn:hover {
@@ -82,6 +84,7 @@ h1 {
 #pause-btn, #resume-btn {
     display: none;
 }
+
 #pause-btn:hover {
     background-color: #777171;
     color: #f2f9ff;
@@ -91,8 +94,6 @@ h1 {
     background-color: #777171;
     color: #f2f9ff;
 }
-
-
 
 #reset-btn:hover {
     background-color: #ec242e;
