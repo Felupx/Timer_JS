@@ -18,50 +18,60 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 260px;
-    width: 550px;
-    background: transparent;
+    max-width: 100%;
+    width: 90%;
     border-radius: 5px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px;
+    width: fit-content;
 
 }
 
 h1 {
+    font-size: 2vw;
     color: white;
 }
 
 .timer {
+    align-items: center;
+    justify-content: center;
     display: flex;
-    font-size: 60px;
+    font-size: 6vw;
     font-weight: bold;
     color: white;
+    margin-bottom: 15px;
+    max-width: 100%;
 }
 
 .time {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    min-width: 90px;
+    margin: 0 5px;
+    min-width: 10vw;
+    max-width: 100%;
 }
 
 .separator {
     display: flex;
-    font-size: 65px;
+    font-size: 7vw;
     padding-bottom: 20px;
     color: #a7d9e7;
 }
 
 #milliseconds {
     display: flex;
-    font-size: 30px;
+    font-size: 2.8vw;
     color: #f2f9ff;
 }
 
 .buttons {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn {
@@ -82,19 +92,35 @@ h1 {
 #pause-btn, #resume-btn {
     display: none;
 }
-#pause-btn:hover {
+#pause-btn:hover, #resume-btn:hover {
     background-color: #777171;
     color: #f2f9ff;
 }
-
-#resume-btn:hover {
-    background-color: #777171;
-    color: #f2f9ff;
-}
-
-
 
 #reset-btn:hover {
     background-color: #ec242e;
     color: #f2f9ff;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    .timer {
+        font-size: 14vw;
+    }
+
+    .time {
+        font-size: max(10vw, 30px);
+    }
+
+    .separator {
+        font-size: 12vw;
+    }
+
+    #milliseconds {
+        font-size: 6vw;
+    }
 }
